@@ -1,0 +1,240 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro';
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width:100%;
+    height:auto;
+}
+
+/* Nav-bar */
+
+.nav-bar {
+    margin:0 auto;
+    max-width:414px;
+    display:flex;
+    justify-content: space-between;
+    padding:21px;
+}
+
+.flex {
+    display:flex;
+    align-items: center;
+}
+
+.nav-bar-logo {
+    gap:3px;
+    font-size:13px;
+    font-family: 'Roboto';
+}
+
+.nav-bar-logo h3 {
+    margin:0;
+}
+
+.nav-bar-logo img{
+    width:23px;
+}
+
+.nav-bar-ele {
+    gap:35px;
+}
+
+.nav-bar-ele a {
+    text-decoration: none;
+    color:#090909;
+}
+
+.nav-bar-ele p {
+    text-transform: uppercase;
+    font-size:12px;
+    font-weight:600;
+    margin:0;
+}
+
+/* Header-Section */
+
+.header {
+    max-width:414px;
+    margin:0 auto;
+    background-image: url('images/HeaderImage.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding:90px 21px 25px;
+    margin-bottom:34px;
+}
+
+.header-starting-date {
+    margin:0 0 10px 0;
+    font-size:12px;
+    text-transform: uppercase;
+}
+
+.header-heading {
+    margin:0 0 20px 0;
+}
+
+.header-desc {
+    margin:0;
+    line-height:1.5;
+}
+
+/* About-Me Page Header Section */
+
+.header-home {
+    max-width:414px;
+    margin:0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:black;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding:32px 21px 25px;
+    margin-bottom:34px;
+    color:#151515;
+}
+
+.header-image {
+    border:1px solid black;
+    object-fit: cover;
+    height:191px;
+    margin-top:35px;
+}
+
+.header-flex p {
+    line-height: 1.4;
+}
+
+.recent-posts {
+    text-align: center;
+    margin-bottom:27px;
+}
+
+.about-me-desc h4 {
+    font-size:20px;
+    color:#151515;
+}
+
+.black {
+    color:#151515;
+}
+
+.picture {
+    width:200px;
+    border-radius:50%;
+}
+
+/* Blog-Section */
+
+.blog-section {
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+}
+
+.blogs {
+    width:90%;
+    max-width:374px;
+    margin:0 auto;
+    margin-bottom:41px;
+}
+
+.blogs img {
+    margin:0 0 14px 0;
+    height:232px;
+}
+
+.blog-date {
+    font-size:14px;
+    margin:0 0 9px 0;
+    text-transform: uppercase
+}
+
+.blogs h2 {
+    margin:0 0 9px 0;
+    color:#141414;
+}
+
+.blog-desc {
+    color:#505050;
+    line-height:1.4;
+}
+
+/* Footer-Section */
+
+.contact-section {
+    max-width:414px;
+    margin:0 auto;
+    text-align: center;
+    padding:37px 0;
+    background: #202020;
+    box-shadow:0px 0px 10px gray;
+}
+
+.contact-section h4 {
+    margin:0 0 3px 0;
+    color:#ECECEC;
+}
+
+.contact-section p {
+    margin:0;
+    color:#D7D7D7;
+}
+
+/* Responsive for Big Screens */
+
+@media only screen and (min-width: 700px) {
+    .nav-bar, .header,.header-home, .blog-section, .contact-section {
+        max-width:1085px;
+    }
+    
+    /* Header */
+    
+    .header {
+        height:488px;
+        padding-bottom:60px;
+        padding-left:53px;
+    }
+    .header p {
+        width:614px;
+    }
+    .header h1 {
+        font-size:40px;
+    }
+    .header-flex {
+        margin:0 auto;
+        display:flex;
+        align-items: center;
+        gap: 50px;
+        margin-bottom:40px;
+        width:90%;
+    }
+    .about-me-desc {
+        width:80%;
+        margin:0 auto;
+    }
+    
+    /* Blog Section */
+    
+    .blog-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:26px;
+        width:95%;
+    }
+    .blogs {
+        max-width:309px;
+    }
+}
