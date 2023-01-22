@@ -64,7 +64,7 @@ img {
 .header {
     max-width:414px;
     margin:0 auto;
-    background-image: url('images/HeaderImage.png');
+    background-image: url('HeaderImage.png');
     background-size: cover;
     background-repeat: no-repeat;
     color:white;
